@@ -1,0 +1,94 @@
+* {
+  font-family: "Fraunces", serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: #9351ad;
+}
+.contenedor {
+  height: 100vh;
+}
+nav {
+  height: 50px;
+  background-color: #36363633;
+  text-align: center;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+    width: 200p;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+.iconos{
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: 120px repeat(6, 50px);
+  background-color: #78219b;
+  padding: 15px;
+  border-radius: 32px;
+  box-shadow: 10px 5px 2px 5px #00000033;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 0;
+  border-radius: 32px;
+  font-size: 1.25em;
+  border: none;
+  background-color: #790ea3;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #ea00ff1f;
+}
+
+button:active {
+  background-color: #8630a8;
+}
+
+button:focus {
+  outline: none;
+}
+
+.display {
+  grid-column: 1/-1;
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #363636;
+  border-radius: 32px 32px 15px 15px;
+  text-align: right;
+  justify-content: space-around;
+  word-break: break-all;
+  box-shadow: 0px 0px 0px 5px #36363666;
+}
+
+.row-2 {
+  grid-row: span 2;
+  border-radius: 25px;
+}
+
+.valorActual {
+  font-size: 1.2em;
+}
+
+.valorAnterior {
+  font-size: 1.5em;
+}
